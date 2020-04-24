@@ -1,12 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/73357b21d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark ">
+      <a class="navbar-brand" href="#">Ayush's Blog</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Journal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Ambitions</a>
+              <a class="dropdown-item" href="#">About me</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Contact me</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search Blog
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="jumbotron" style="padding:0px;">
+      <div id="jmb-banner">
+        <h1 class="display-4 serif">Welcome to Ayush's Wall!</h1>
+        <h5>His shi* is his shi*,none of your *hit</h5>
+      </div>
+    </div>
+
+    <div class="container-fluid ag-container-fluid-1 ">
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-md-4 pb-4">
+          <div class="card">
+            <img
+              class="card-img-top "
+              src="./assets/DPic.jpg"
+              alt="Card image"
+              style="width:100%; filter: grayscale(50%);"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Ayush Garg</h4>
+              <p class="card-text">
+                Ayush works for Exl Service and aspires to be a founder of a
+                gleaming Tech Startup some day. He is a technology and science
+                enthusiast and an engineer
+              </p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 ">
+          <div
+            style="background-color:#ededed; border-top-left-radius:4%; border-top-right-radius:4%;"
+          >
+            <br />
+            <h4 style="padding-left:20px;">My Hobbies include...</h4>
+
+            <ul class="list-group" style="border:none;">
+              <li class="list-group-item  ">Binging on Science Facts</li>
+              <li class="list-group-item  ">
+                Playing sports ( Football, Bball, TT)
+              </li>
+              <li class="list-group-item ">Travelling</li>
+              <li class="list-group-item ">
+                Trekking on undiscovered mountains
+              </li>
+              <li class="list-group-item ">Dancing</li>
+              <li class="list-group-item ">umm.. Being alone?</li>
+              <li class="list-group-item ">Meditating</li>
+              <li class="list-group-item ">and Sleeping..</li>
+            </ul>
+          </div>
+          <div class="card" style="width:100%;background-color:#ededed;">
+            <div class="card-body">
+              <h5 class="card-title">About me</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 pt-1">
+          <div class="row px-3">
+            <div
+              class="col-3 col-sm-4 col-md-12 jumbotron-thmb-wrapper thmb-col1"
+            >
+              <div class="">
+                <i class="fas fa-microscope fa-4x"></i>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-3 col-sm-4 col-md-12 jumbotron-thmb-wrapper">
+              <div class="">
+                <i class="fas fa-basketball-ball fa-4x"></i>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div
+              class="col-3 col-sm-4 col-md-12 jumbotron-thmb-wrapper thmb-col2"
+            >
+              <div class="">
+                <i class="fas fa-mountain fa-4x"></i>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div class="col-3 col-sm-4 col-md-12 jumbotron-thmb-wrapper">
+              <div class="">
+                <i class="fas fa-om fa-4x"></i>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div
+              class="col-6 col-sm-4 col-md-12 jumbotron-thmb-wrapper thmb-col3"
+            >
+              <div class="">
+                <i class="fas fa-bed fa-4x"></i>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-12 jumbotron-thmb-wrapper">
+              <div class="">
+                <i class="fas fa-plus fa-4x"></i>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color:black;">
+      <div class="container " style="height:60vh">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide "
+          style="height:100%;"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" style="height:100%">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 ag-carousel-img"
+                src="./assets/carousel/desk.jpg"
+                alt="First slide"
+              />
+              <div class="carousel-caption  d-md-block">
+                <h5>Coding Life</h5>
+                <p>
+                  Spending time all day on a Computer is unhealthy. .. But not
+                  for me!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 ag-carousel-img"
+                src="./assets/carousel/cycling.jpg"
+                alt="Second slide"
+              />
+              <div class="carousel-caption  d-md-block">
+                <h5>Cycling</h5>
+                <p>
+                  I love cycling my way through cities and beyond. Only way
+                  things stays amid the journey: the peace of mind
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 ag-carousel-img"
+                src="./assets/carousel/mountain.jpg"
+                alt="Third slide"
+              />
+              <div class="carousel-caption  d-md-block">
+                <h5>Mountains</h5>
+                <p>If heavens had a parking lot ... these would be it</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 ag-carousel-img"
+                src="./assets/carousel/meditation.jpg"
+                alt="Fourth slide"
+              />
+              <div class="carousel-caption  d-md-block">
+                <h5>Meditation</h5>
+                <p>
+                  Going Offline is actually going Online while meditation. The
+                  world becomes clearer midst all the traffic and worldly
+                  interferences
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 ag-carousel-img"
+                src="./assets/carousel/sleep.jpg"
+                alt="Fifth slide"
+              />
+              <div class="carousel-caption  d-md-block">
+                <h5>Sleep</h5>
+                <p>Last but not the Least, Sleep hard after you feast</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
